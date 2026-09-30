@@ -1,0 +1,10 @@
+{
+	admin off
+}
+
+:8080 {
+	root * /srv
+	encode zstd gzip
+	header -Server
+	file_server
+}
